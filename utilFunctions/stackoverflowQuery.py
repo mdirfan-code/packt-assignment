@@ -7,7 +7,7 @@ base_url = 'https://api.stackexchange.com/2.3/'
 
 
 def get_top_trending_tags():
-    
+
     monthsByNo = {1:"January",2:"February",3:"March",4:"April",5:"May",6:"June",7:"July",8:"August",9:"September",10:"October",11:"November",12:"December"}
     today = datetime.today()
     start_date = today.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
@@ -39,7 +39,6 @@ def get_most_common_languages_tagged_this_year(year):
     site = "stackoverflow"
     order = "desc"
     sort = "votes"
-    api_key = "qJdjK7G77DZMcVA2tZzZfA(("
     pagesize = 50
     fromdate = int(datetime.datetime(year, 1, 1).timestamp())
     todate = int(datetime.datetime(year, 12, 31).timestamp())
